@@ -483,7 +483,7 @@ class Chaturbate(LiveRecoder):
                     session=self.get_streamlink(),
                     url=response['url']
                 )
-                stream = list(streams.values())[2]
+                stream = list(streams.values())[3]
                 await asyncio.to_thread(self.run_record, stream, url, title, 'ts')
 
 
